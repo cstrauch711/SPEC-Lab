@@ -1,12 +1,12 @@
 #####################################################
-# Bjørnskov-Rode Regime Data Prep
-# This is an update and expansion of Cheibub, Gandhi and Vreeland's DD dataset by Christian Bjørnskov and Martin Rode for the SPEC Lab Database
+# BjÃ¸rnskov-Rode Regime Data Prep
+# This is an update and expansion of Cheibub, Gandhi and Vreeland's DD dataset by Christian BjÃ¸rnskov and Martin Rode for the SPEC Lab Database
 # Data Source: http://www.christianbjoernskov.com/bjoernskovrodedata/
 # Created by: Clayton Strauch
 # Created: 12 June 2020
 # Last Edited by: CS
 # Last Edited: 16 June 2020
-# Notes: 'brrd' is the abbreviation of 'Bjørnskov-Rode Regime Data'
+# Notes: 'brrd' is the abbreviation of 'BjÃ¸rnskov-Rode Regime Data'
 #####################################################
 
 # Load Libraries & set working directory
@@ -17,8 +17,8 @@ library(readxl)
 # Note that the filepath variables must be loaded into env. at this point
 # Note that the creators of this dataset left spaces between variables, so when imported, new blank columns appear with format "..##" with all values missing
 # Note that the creators of this dataset reused variable names often (i.e. year), so R renamed them with suffixes with format "...#"
-brrd_regime <- as.data.frame(read_excel("Bjornskov-Rode-integrated-dataset-v2.2_CS_06152020.xlsx", sheet = "Regime characteristics", col_names = TRUE))
-brrd_coup <- as.data.frame(read_excel("Bjornskov-Rode-integrated-dataset-v2.2_CS_06152020.xlsx", sheet = "Coups", col_names = TRUE))
+brrd_regime <- as.data.frame(read_excel("data/Bjornskov-Rode-integrated-dataset-v2.2_CS_06152020.xlsx", sheet = "Regime characteristics", col_names = TRUE))
+brrd_coup <- as.data.frame(read_excel("data/Bjornskov-Rode-integrated-dataset-v2.2_CS_06152020.xlsx", sheet = "Coups", col_names = TRUE))
 
 # PREP FOR REGIME DATA ##########################################
 
